@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+  <head>
+    <title>Opticentro A&E</title>
+    <meta
+      name="description"
+      content="Descubre el catálogo digital de Opticentro A&E. Aros de marca, línea fina y exámenes visuales con la mejor tecnología en Comayagua."
+    />
+    <meta
+      name="keywords"
+      content="Óptica, Comayagua, Aros, Lentes, Opticentro, Examen de la vista, Anteojos"
+    />
+
+    <meta property="og:title" content="Opticentro A&E - Catálogo Digital" />
+    <meta
+      property="og:description"
+      content="Explora nuestra colección de aros con un solo clic. Calidad y estilo para tu visión."
+    />
+    <meta
+      property="og:image"
+      content="https://opticentroae.com/img/logo.jpeg"
+    />
+    <meta property="og:url" content="https://opticentroae.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://opicentroae.com/img/banner.jpeg"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div id="preloader-art">
+      <div class="preloader-content">
+        <img src="img/banner.jpeg" alt="Logo Opticentro" id="img-preloader" />
+        <div class="loader-track"><div class="loader-fill"></div></div>
+        <p class="loader-text">Preparando tu mejor vista ...</p>
+      </div>
+    </div>
+
+    <button id="theme-toggle" aria-label="Cambiar Tema">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <header></header>
+
+    <div class="contact-bar">
+      <span>
+        <a
+          href="https://www.google.com/maps/place/14%C2%B027'36.3%22N+87%C2%B038'31.2%22W/@14.4600827,-87.644581,698m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d14.4600827!4d-87.6420061?hl=es&entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          class="cta-link"
+        >
+          <i class="fas fa-map-marker-alt"></i> COMAYAGUA 1
+        </a>
+      </span>
+      <span class="separator">•</span>
+      <span>
+        <a
+          href="https://www.google.com/maps?q=14.4547146,-87.6437825&z=17&hl=es"
+          target="_blank"
+          class="cta-link"
+        >
+          <i class="fas fa-map-marker-alt"></i> COMAYAGUA 2
+        </a>
+      </span>
+      <span class="separator">•</span>
+      <span>
+        <a
+          href="https://www.google.com/maps/place/14%C2%B019'14.6%22N+87%C2%B040'52.3%22W/@14.3207098,-87.6837698,698m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d14.3207098!4d-87.6811949?hl=es&entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          class="cta-link"
+        >
+          <i class="fas fa-map-marker-alt"></i> LA PAZ
+        </a>
+      </span>
+      <span class="separator">•</span>
+      <span>
+        <a href="https://wa.me/50431540798" target="_blank" class="cta-link">
+          <i class="fab fa-whatsapp"></i> AGENDA TU CITA
+        </a>
+      </span>
+      <span class="separator">•</span>
+      <span>
+        <a
+          href="mailto:Opicentroae@gmail.com?subject=Consulta%20desde%20la%20Web"
+          class="cta-link"
+        >
+          <i class="fas fa-envelope"></i> CORREO
+        </a>
+      </span>
+    </div>
+
+    <section class="typing-section">
+      <div class="typing-container">
+        <h2 id="titulo-escrito" class="shimmer-text"></h2>
+      </div>
+    </section>
+
+    <section class="bio-section">
+      <div class="bio-container">
+        <div class="bio-text">
+          <span class="bio-badge">CUIDADO PROFESIONAL</span>
+          <h2>Tu visión en manos expertas</h2>
+          <p class="bio-description">
+            En <strong>Opticentro A&E</strong>, nos dedicamos a mejorar tu
+            calidad de vida a través de una visión clara. <br /><br />
+            <span class="visitanos-text">
+              ¡Visítanos! Será un gusto atenderte
+              <span class="emoji-fix">👓✨</span>
+            </span>
+          </p>
+          <div class="bio-footer">
+            <span>Honduras 🇭🇳</span>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="category-filter-section">
+      <button class="filter-btn active" onclick="filtrar('Todos', this)">
+        Todos
+      </button>
+      <button class="filter-btn" onclick="filtrar('linia de marca', this)">
+        Línea de Marca
+      </button>
+      <button class="filter-btn" onclick="filtrar('linia fina', this)">
+        Línea Fina
+      </button>
+      <button class="filter-btn" onclick="filtrar('linia media', this)">
+        Línea Media
+      </button>
+      <button class="filter-btn" onclick="filtrar('linia niño/a', this)">
+        Línea Niño/a
+      </button>
+    </div>
+
+    <main class="grid-container" id="galeria"></main>
+
+    <section class="horarios-section">
+      <div class="horarios-container">
+        <h3><i class="far fa-clock"></i> Horarios de Atención</h3>
+        <div class="horarios-grid">
+          <div class="dia">
+            <span>Lunes a Viernes</span> <strong>8:00 AM - 5:00 PM</strong>
+          </div>
+          <div class="dia">
+            <span>Sábado</span> <strong>8:00 AM - 5:00 PM</strong>
+          </div>
+          <div class="dia">
+            <span>Domingo</span> <strong class="cerrado">Cerrado</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-custom">
+      <div class="footer-content">
+        <h3 class="shimmer-text footer-thanks">
+          Gracias por preferirnos <span class="emoji-fix">🙏</span>
+        </h3>
+        <hr class="footer-line" />
+        <div class="footer-bottom-row">
+          <p class="copyright">© 2026 Opticentro A&E.</p>
+          <div class="dev-credits shimmer-text">
+            Hecho con arte por
+            <span>ArticDash-2 <span class="emoji-fix">🚀</span></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="modal-visor" class="modal">
+      <div class="cerrar-modal" onclick="cerrarModal()">
+        <i class="fas fa-times"></i>
+      </div>
+      <img class="modal-img" id="img-full" alt="Vista ampliada" />
+      <p id="desc-texto"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
